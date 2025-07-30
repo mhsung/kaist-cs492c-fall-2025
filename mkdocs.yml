@@ -1,0 +1,88 @@
+site_name: CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)
+site_url: https://mhsung.github.io/kaist-cs492c-fall-2025/
+site_author: Minhyuk Sung
+
+theme:
+  name: material
+  icon:
+    logo: material/cube-outline
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - footnotes
+  - meta
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables
+
+plugins:
+  #- with-pdf:
+  #    cover_subtitle: Minhyuk Sung
+
+copyright: Copyright &copy; 2025 Minhyuk Sung
+
+nav:
+  - Home: index.md
+  - Programming Assignments: programming-assignments.md
+#  - Project: project.md
+#  - Poster: poster.md
+#  - Guest Lecture 1: guest-lecture-or-patashnik.md
+#  - Guest Lecture 2: guest-lecture-jiaming-song.md
+
+extra:
+  analytics:
+    provider: google
+    property: G-K17BE0T43W
+  links:
+    lec01: https://onedrive.live.com/?authkey=%21AASAq2f%2De3R243U&id=60562023B6640282%2133277&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec02: https://onedrive.live.com/?authkey=%21ALzaUEpQOU113jU&id=60562023B6640282%2133281&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec03: https://onedrive.live.com/?authkey=%21AA4GsrnIDdEwETk&id=60562023B6640282%2133335&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec04: https://onedrive.live.com/?authkey=%21AFso9%2D2NpDufMj8&id=60562023B6640282%2133350&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec05: https://onedrive.live.com/?authkey=%21AMmPsVjBPpfxb1k&id=60562023B6640282%2133418&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec06: https://onedrive.live.com/?authkey=%21ABHvxX2avMjUNp8&id=60562023B6640282%2133439&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec07: https://onedrive.live.com/?authkey=%21ABxUkPoVRoV517Q&id=60562023B6640282%2133463&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec08: https://onedrive.live.com/?authkey=%21AAcwE3RFLKJZD48&id=60562023B6640282%2133544&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec09: https://onedrive.live.com/?authkey=%21AIn4sJMkHa50qoU&id=60562023B6640282%2133616&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec10: https://onedrive.live.com/?authkey=%21ACm8fcJ9WWR5gJo&id=60562023B6640282%2133662&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec11: https://onedrive.live.com/?authkey=%21AErBzdjG8s8RbWI&id=60562023B6640282%2133826&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec12: https://onedrive.live.com/?authkey=%21AN8bG3bAGVplCiM&id=60562023B6640282%2133877&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec13: https://onedrive.live.com/?authkey=%21AJZWpgO0gvMwQf0&id=60562023B6640282%2133913&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec14: https://onedrive.live.com/?authkey=%21AIT4Su3KDWNiiGY&id=60562023B6640282%2133927&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec15: https://onedrive.live.com/?authkey=%21AIzRQRT6KVVnBQM&id=60562023B6640282%2133983&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec16: https://onedrive.live.com/?authkey=%21ANWCCFqacri1GIc&id=60562023B6640282%2134009&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    lec17: https://onedrive.live.com/?authkey=%21AJOX96fladtGa1w&id=60562023B6640282%2134066&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    rec02: https://youtu.be/Nh9MIEbCJIw
+    rec03: https://youtu.be/9V-7BoxEcqk
+    rec04: https://youtu.be/--p26ltTUaU
+    rec05: https://youtu.be/Gb5RQMvp9SQ
+    rec06: https://youtu.be/uh2HppNSleI
+    rec07: https://youtu.be/9b77BqpqV2E
+    rec08: https://youtu.be/JYfWr1cXzcg
+    rec09: https://youtu.be/l1bYcU6Z7iU
+    rec10: https://youtu.be/y2bhQm8duSc
+    rec11: https://youtu.be/1W0RDVjZu9M
+    rec12: https://youtu.be/5WljG2GREUU
+    rec13: https://youtu.be/GtiNs7nkSgs
+    rec14: https://youtu.be/t0xUhatHCQc
+    rec15: https://youtu.be/B4FfBNKl2tg
+    rec16: https://youtu.be/TTftvNfSH6E
+    rec17: https://youtu.be/FXPclpQcTdo
+    guest_rec1: https://youtu.be/jkJ527y9PxI
+    guest_rec2: https://youtu.be/u5kk1aXHJpM
+    asgmt01: https://onedrive.live.com/?authkey=%21ACaRkVZxqBejCfc&id=60562023B6640282%2133352&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    asgmt02: https://onedrive.live.com/?authkey=%21ACN6yTEJUZueN8w&id=60562023B6640282%2133440&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    asgmt03: https://onedrive.live.com/?authkey=%21AJdHJKpGB2m385U&id=60562023B6640282%2133545&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    asgmt04: https://onedrive.live.com/?authkey=%21ANqnCftvb6ojscg&id=60562023B6640282%2133661&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    asgmt05: https://onedrive.live.com/?authkey=%21AOUVO5zNooPivoE&id=60562023B6640282%2133843&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    asgmt06: https://onedrive.live.com/?authkey=%21AAQOGSL1XO0mWn0&id=60562023B6640282%2133950&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp
+    asgmt07: https://onedrive.live.com/?authkey=%21AH%2DYC2F9SY1ZlxQ&id=60562023B6640282%2134013&cid=60562023B6640282&parId=root&parQt=sharedby&o=OneUp 
