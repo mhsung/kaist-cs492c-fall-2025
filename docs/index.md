@@ -26,6 +26,10 @@ Recent breakthroughs in generative AI have amazed people with the unprecedented 
 In this course, we will discuss the theoretical foundations and practical applications of diffusion models. While the goal is to cover both theory and practice, the focus will be on gaining hands-on experience by implementing diffusion model techniques in programming assignments and solving real-world problems in the course project. There will be no midterm or final exams.
 
 
+## Prerequisites
+This course is designed for students with a fundamental understanding of deep learning and experience using PyTorch.
+
+
 ## Course Staff
 **Instructor**: [Minhyuk Sung](https://mhsung.github.io/){:target="_blank"} ([mhsung@kaist.ac.kr](mailto:mhsung@kaist.ac.kr))
 
@@ -37,8 +41,8 @@ In this course, we will discuss the theoretical foundations and practical applic
 - Yunhong Min ([dbsghd363@kaist.ac.kr](mailto:dbsghd363@kaist.ac.kr))
 
 
-## Prerequisites
-This course is designed for students with a fundamental understanding of deep learning and experience using PyTorch.
+## Past Years
+- [CS492(D): Diffusion Models and Their Applications](https://mhsung.github.io/kaist-cs492d-fall-2024/){:target="_blank"}
 
 
 ## Grading
