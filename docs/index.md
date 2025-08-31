@@ -10,7 +10,9 @@ hide:
 </b></h3>
 <br />
 
-![Teaser](assets/teaser.png){ width=97.5% }
+![Teaser](assets/teaser.png){ width=97.5% }[^1]
+
+[^1]: Teaser image credits: Song et al., Score-Based Generative Modeling through Stochastic Differential Equations, ICLR 2021.<br>
 
 
 ## Time & Location
