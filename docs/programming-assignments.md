@@ -17,7 +17,7 @@ hide:
 
 ### Assignment Links
 - Assignment1 (DDPM / DDIM): [{{links.asgmt01}}]({{links.asgmt01}}){:target="_blank"}
-- Assignment2 (DPMSolver): [{{links.asgmt02}}]({{links.asgmt02}}){:target="_blank"}
+- Assignment2 (DPM-Solver): [{{links.asgmt02}}]({{links.asgmt02}}){:target="_blank"}
 - Assignment3 (Flow Matching): [{{links.asgmt03}}]({{links.asgmt03}}){:target="_blank"}
 
 <!--
