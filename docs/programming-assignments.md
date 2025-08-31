@@ -3,10 +3,10 @@ hide:
   - navigation
 ---
 
-# CS492(D): Diffusion Models and Their Applications
+# CS492(C): Diffusion and Flow Models
 
 <h3><b>
-<a href="http://mhsung.github.io/" target="_blank">Minhyuk Sung</a>, <a href="https://www.kaist.ac.kr/" target="_blank">KAIST</a>, Fall 2024
+<a href="http://mhsung.github.io/" target="_blank">Minhyuk Sung</a>, <a href="https://www.kaist.ac.kr/" target="_blank">KAIST</a>, Fall 2025
 </b></h3>
 
 
