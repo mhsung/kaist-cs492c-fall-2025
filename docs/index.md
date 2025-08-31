@@ -29,7 +29,12 @@ In this course, we will discuss the theoretical foundations and practical applic
 
 
 ## Prerequisites
-This course is designed for students with a fundamental understanding of deep learning and experience using PyTorch.
+- Solid background in machine learning and deep learning
+- Hands-on experience with neural network implementation
+- Recommended prior courses:
+    - MAS.20050 Probability and Statistics
+    - MAS.20001 Differential Equations and Applications
+    - CS.30701 Introduction to Deep Learning
 
 
 ## Course Staff
@@ -37,9 +42,9 @@ This course is designed for students with a fundamental understanding of deep le
 
 **Course Assistants:**
 
-- Yuseung Lee ([phillip0701@kaist.ac.kr](mailto:phillip0701@kaist.ac.kr))
-- Seungwoo Yoo ([dreamy1534@kaist.ac.kr](mailto:dreamy1534@kaist.ac.kr))
 - Juil Koo ([63days@kaist.ac.kr](mailto:63days@kaist.ac.kr))
+- Seungwoo Yoo ([dreamy1534@kaist.ac.kr](mailto:dreamy1534@kaist.ac.kr))
+- Yuseung Lee ([phillip0701@kaist.ac.kr](mailto:phillip0701@kaist.ac.kr))
 - Yunhong Min ([dbsghd363@kaist.ac.kr](mailto:dbsghd363@kaist.ac.kr))
 
 
@@ -49,10 +54,10 @@ This course is designed for students with a fundamental understanding of deep le
 
 ## Grading
 - In-Class Participation: 10%
-- Midterm Exam: 25%
-- Programming Assignments: 25%
+- Programming Assignments: 20%
 - Image Generation Challenge: 20%
-- Visual Content Creation Contest: 20%
+- Visual Content Creation Contest: 25%
+- Midterm Exam: 25%
 
 <!--
 ## Paper List
