@@ -43,6 +43,7 @@ extra:
     provider: google
     property: G-K17BE0T43W
   links:
+    lec01: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VkOFQzMzF6allkUHZTTElRRnpqRkM4QlF3Y2FOZkM5MVBtNTRlcnZJUk1fbWc%5FZT1yc0tjTlQ&cid=60562023B6640282&id=60562023B6640282%21s7ddf13df8d734f87bd22c8405ce3142f&parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&o=OneUp
     asgmt01: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment1-DDPM-DDIM
     asgmt02: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment2-DPMSolver
     asgmt03: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment3-Flow

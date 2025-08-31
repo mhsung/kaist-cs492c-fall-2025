@@ -67,6 +67,8 @@ In this course, we will discuss the theoretical foundations and practical applic
 
 
 ## Useful Resources
+- [Fall 2024 Course Webpage](https://mhsung.github.io/kaist-cs492d-fall-2024/){:target="_blank"}
+- [SIGGRAPH 2025 Course: Diffusion Models for Image and Video Generation: From Foundations to Emerging Directions](https://geometry.cs.ucl.ac.uk/courses/diffusion_ImageVideo_sigg25/){:target="_blank"}
 - [SIGGRAPH 2024 Course: Diffusion Models for Visual Content Generation](https://geometry.cs.ucl.ac.uk/courses/diffusion4ContentCreation_sigg24/){:target="_blank"}
 - [CVPR 2023 Tutorial: Denoising Diffusion Models: A Generative Learning Big Bang](https://cvpr2023-tutorial-diffusion-models.github.io/){:target="_blank"}
 - ["Generative Modeling by Estimating Gradients of the Data Distribution", Yang Song.](https://yang-song.net/blog/2021/score/){:target="_blank"}
@@ -93,7 +95,7 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 
 | Week | Mon | Topic | Wed | Topic |
 | :----: | :----: | :----: | :----: | :----: |
-| 1  | Sep 01 | __Course Introduction__         | Sep 03 | __Introduction to Generative Models__ |
+| 1  | Sep 01 | __Course Introduction__<br>[**Slides**]({{links.lec01}}){:target="_blank"} | Sep 03 | __Introduction to Generative Models__ |
 | 2  | Sep 08 | __DDPM 1__                      | Sep 10 | __DDPM 2__ |
 | 3  | Sep 15 | __DDIM 1__                      | Sep 18 | ==[Assignment 1 Session]({{links.asgmt01}}){:target="_blank"}== |
 | 4  | Sep 22 | __DDIM 2 / CFG / ControlNet__     | Sep 24 | __PF-ODE / DPM-Solver 1__ |
