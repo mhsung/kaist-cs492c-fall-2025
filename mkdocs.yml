@@ -1,5 +1,5 @@
 site_name: CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)
-site_url: https://mhsung.github.io/kaist-cs492c-fall-2025/
+site_url: https://diffusion.kaist.ac.kr/
 site_author: Minhyuk Sung
 
 theme:
@@ -26,6 +26,7 @@ markdown_extensions:
   - tables
 
 plugins:
+  - macros
   #- with-pdf:
   #    cover_subtitle: Minhyuk Sung
 
@@ -44,3 +45,7 @@ extra:
     provider: google
     property: G-K17BE0T43W
   links:
+    asgmt01: https://diffusion.kaist.ac.kr/
+    asgmt02: https://diffusion.kaist.ac.kr/
+    asgmt03: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment3-Flow
+    demo: https://diffusion.kaist.ac.kr/

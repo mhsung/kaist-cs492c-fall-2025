@@ -12,16 +12,13 @@ hide:
 
 ## Programming Assignments
 
-^^Where to submit^^: Gradescope
+^^Where to submit^^: ==KLMS==
+
 
 ### Assignment Links
-- Assignment1 (DDPM): [https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment1-DDPM](https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment1-DDPM){:target="_blank"}
-- Assignment2 (DDIM / CFG): [https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment2-DDIM-CFG](https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment2-DDIM-CFG){:target="_blank"}
-- Assignment3 (ControlNet / LoRA): [https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment3-ControlNet-LoRA](https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment3-ControlNet-LoRA){:target="_blank"}
-- Assignment4 (Distillation): [https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment4-Distillation](https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment4-Distillation){:target="_blank"}
-- Assignment5 (Synchronization): [https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment5-Synchronization](https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment5-Synchronization){:target="_blank"}
-- Assignment6 (DPMSolver): [https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment6-DPMSolver](https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment6-DPMSolver){:target="_blank"}
-- Assignment7 (Flow): [https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment7-Flow](https://github.com/KAIST-Visual-AI-Group/Diffusion-Assignment7-Flow){:target="_blank"}
+- Assignment1 (DDPM / DDIM): [{{links.asgmt01}}]({{links.asgmt01}}){:target="_blank"}
+- Assignment2 (DPMSolver): [{{links.asgmt02}}]({{links.asgmt02}}){:target="_blank"}
+- Assignment3 (Flow Matching): [{{links.asgmt03}}]({{links.asgmt03}}){:target="_blank"}
 
 <!--
 ==The last two assignments are optional.== You are not required to submit your solutions for them. We kindly provide additional programming assignments to support you in gaining hands-on experience with well-established libraries.
@@ -29,17 +26,27 @@ hide:
 
 **Please carefully review the README of each assignment before you begin** and check what you need to submit for each assignment.
 
+
+### Session Link
+Along with the assignment sessions, we offer an additional *optional* programming session that will be helpful for preparing the course project.
+
+- Session (Distillation / Synchronization): [{{links.demo}}]({{links.demo}}){:target="_blank"}
+
+
+
 ### Prerequisite
 You'll need basic programming skills in PyTorch to complete the programming assignments. We do not provide tutorials on PyTorch, but there are plenty of resources available on the Internet.
 
 The programming assignments are designed as a barometer to assess whether you are prepared for the course project. **If you find the programming assignments too challenging, this course might not be the right fit for you.**
 
+<!--
 ### Computing Resource
 We have a limited number of GPUs available in [KCLOUD](https://kcloud.kaist.ac.kr/){:target="_blank"}. **Only undergraduate students will be assigned one GPU.**
 
 [KCLOUD Official Tutorial](https://docs.google.com/presentation/d/1Xen2KpMRhThK_6NRbuGTJIk1M2Eu_zaUwmStKD-5P6U/edit#slide=id.p){:target="_blank" .md-button}
 
 [KCLOUD X11 Forwarding Instructions](https://docs.google.com/presentation/d/1yRmQRhrBIaKc9sjt_OCO3nnttANIQfDbyVwFWAt0ugY/edit?usp=sharing){:target="_blank" .md-button}
+-->
 
 ### ^^AI Coding Assistant Tool Policy^^
 **You are allowed (and even encouraged) to utilize AI coding assistant tools**, such as ChatGPT, Copilot, Codex, and Code Intelligence, for your programming assignments and projects. Utilizing AI coding assistant tools will not be deemed as plagiarism. However, it is still strictly prohibited to directly copy code from the Internet or from someone else. Doing so will lead to a score of zero and a report to the university.
