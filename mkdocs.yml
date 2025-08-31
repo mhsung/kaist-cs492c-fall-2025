@@ -27,8 +27,6 @@ markdown_extensions:
 
 plugins:
   - macros
-  #- with-pdf:
-  #    cover_subtitle: Minhyuk Sung
 
 copyright: Copyright &copy; 2025 Minhyuk Sung
 
@@ -46,6 +44,6 @@ extra:
     property: G-K17BE0T43W
   links:
     asgmt01: https://diffusion.kaist.ac.kr/
-    asgmt02: https://diffusion.kaist.ac.kr/
+    asgmt02: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment2-DPMSolver
     asgmt03: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment3-Flow
     demo: https://diffusion.kaist.ac.kr/
