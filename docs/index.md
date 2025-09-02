@@ -25,7 +25,7 @@ hide:
 ## Description
 Recent breakthroughs in generative AI have amazed people with the unprecedented quality of generated images and videos, as exemplified by SORA, Midjourney, StableDiffusion, and many others. These advancements have been achieved using diffusion models, which have become the new standard technique for generative models. Diffusion models offer numerous advantages, including superior performance in the quality of generated outputs, as well as capabilities in conditional generation, personalization, zero-shot manipulation, and knowledge distillation.
 
-In this course, we will discuss the theoretical foundations and practical applications of diffusion models. While the goal is to cover both theory and practice, the focus will be on gaining hands-on experience by implementing diffusion model techniques in programming assignments and solving real-world problems in the course project. There will be no midterm or final exams.
+In this course, we will discuss the theoretical foundations and practical applications of diffusion models. While the goal is to cover both theory and practice, the focus will be on gaining hands-on experience by implementing diffusion model techniques in programming assignments and solving real-world problems in the course project. 
 
 
 ## Prerequisites
@@ -54,10 +54,10 @@ In this course, we will discuss the theoretical foundations and practical applic
 
 ## Grading
 - In-Class Participation: 10%
+- In-Class Assessments: 20%
 - Programming Assignments: 20%
-- Image Generation Challenge: 20%
+- Image Generation Challenge: 25%
 - Visual Content Creation Contest: 25%
-- Midterm Exam: 25%
 
 <!--
 ## Paper List
@@ -101,13 +101,13 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 | 4  | Sep 22 | __DDIM 2 / CFG / ControlNet__     | Sep 24 | __PF-ODE / DPM-Solver 1__ |
 | 5  | Sep 29 |  __PF-ODE / DPM-Solver 2__       | Oct 01 | ==[Assignment 2 Session]({{links.asgmt02}}){:target="_blank"}== | 
 | 6  | Oct 06 | No Class (Chuseok)              | Oct 08 | No Class (Chuseok) |
-| 7  | Oct 13 |  __Flow Matching 1__            | Oct 15 | __Midterm Summary__ |
+| 7  | Oct 13 |  __Flow Matching 1__            | Oct 15 | __In-Class Assessment 1__ |
 | 8  | Oct 20 | No Class (Midterm Week)         | Oct 22 | No class (Midterm Week) |
 | 9  | Oct 27 | __Flow Matching 2__             | Oct 30 | ==[Assignment 3 Session]({{links.asgmt03}}){:target="_blank"}== |
 | 10 | Nov 03 | __Score Distillation__          | Nov 06 | __Inference-Time Guidance__ |
 | 11 | Nov 10 | ==[Demo Session]({{links.demo}}){:target="_blank"}== | Nov 12 | No class (Break) |
 | 12 | Nov 17 | __Guest Lecture 1__             | Nov 20 | __Discrete Diffusion__  |
-| 13 | Nov 24 | __Guest Lecture 2__             | Nov 24 | __Course Summary__ |
+| 13 | Nov 24 | __Guest Lecture 2__             | Nov 24 | __In-Class Assessment 2__ |
 | 14 | Dec 01 | No Class (Conference Trip)      | Dec 04 | No Class (Conference Trip) |
 | 15 | Dec 08 | Project Presentations 1         | Dec 11 | Project Presentations 2 |
 | 16 | Dec 15 | No Class (Final Week)           | Dec 18 | No Class (Final Week) |
