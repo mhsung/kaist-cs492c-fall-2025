@@ -83,6 +83,7 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 
 (Subject to Change)  
 
+- Project Team Sign-Up: ==Due Sep 30 (Tue)==  
 - 1st Programming Assignment: ==Due Sep 30 (Tue)==  
 - 2nd Programming Assignment: ==Due Oct 14 (Tue)==  
 - 3rd Programming Assignment: ==Due Nov 11 (Tue)==  
