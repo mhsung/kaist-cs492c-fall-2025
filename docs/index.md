@@ -97,7 +97,7 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 | Week | Mon | Topic | Wed | Topic |
 | :----: | :----: | :----: | :----: | :----: |
 | 1  | Sep 01 | __Course Introduction__<br>[**Slides**]({{links.lec01}}){:target="_blank"} | Sep 03 | __Introduction to Generative Models__<br>[**Slides**]({{links.lec02}}){:target="_blank"}<br>[**Recording**]({{links.rec02}}){:target="_blank"} |
-| 2  | Sep 08 | __DDPM 1__<br>[**Slides**]({{links.lec03}}){:target="_blank"} | Sep 10 | __DDPM 2__ |
+| 2  | Sep 08 | __DDPM 1__<br>[**Slides**]({{links.lec03}}){:target="_blank"}<br>[**Recording**]({{links.rec03}}){:target="_blank"} | Sep 10 | __DDPM 2__<br>[**Slides**]({{links.lec04}}){:target="_blank"} |
 | 3  | Sep 15 | __DDIM 1__                      | Sep 18 | ==[Assignment 1 Session]({{links.asgmt01}}){:target="_blank"}== |
 | 4  | Sep 22 | __DDIM 2 / CFG / ControlNet__     | Sep 24 | __PF-ODE / DPM-Solver 1__ |
 | 5  | Sep 29 |  __PF-ODE / DPM-Solver 2__       | Oct 01 | ==[Assignment 2 Session]({{links.asgmt02}}){:target="_blank"}== | 
