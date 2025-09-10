@@ -39,14 +39,13 @@ You'll need basic programming skills in PyTorch to complete the programming assi
 
 The programming assignments are designed as a barometer to assess whether you are prepared for the course project. **If you find the programming assignments too challenging, this course might not be the right fit for you.**
 
-<!--
-### Computing Resource
-We have a limited number of GPUs available in [KCLOUD](https://kcloud.kaist.ac.kr/){:target="_blank"}. **Only undergraduate students will be assigned one GPU.**
 
-[KCLOUD Official Tutorial](https://docs.google.com/presentation/d/1Xen2KpMRhThK_6NRbuGTJIk1M2Eu_zaUwmStKD-5P6U/edit#slide=id.p){:target="_blank" .md-button}
+### Google Colab
 
-[KCLOUD X11 Forwarding Instructions](https://docs.google.com/presentation/d/1yRmQRhrBIaKc9sjt_OCO3nnttANIQfDbyVwFWAt0ugY/edit?usp=sharing){:target="_blank" .md-button}
--->
+Please refer to the Google Colab quickstart guide at the following link:
+
+[Google Colab Quickstart]({{links.colab}}){:target="_blank" .md-button}
+
 
 ### ^^AI Coding Assistant Tool Policy^^
 **You are allowed (and even encouraged) to utilize AI coding assistant tools**, such as ChatGPT, Copilot, Codex, and Code Intelligence, for your programming assignments and projects. Utilizing AI coding assistant tools will not be deemed as plagiarism. However, it is still strictly prohibited to directly copy code from the Internet or from someone else. Doing so will lead to a score of zero and a report to the university.

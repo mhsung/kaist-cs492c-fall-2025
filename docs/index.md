@@ -84,9 +84,9 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 (Subject to Change)  
 
 - Project Team Sign-Up: ==Due Sep 30 (Tue)==  
-- 1st Programming Assignment: ==Due Sep 30 (Tue)==  
-- 2nd Programming Assignment: ==Due Oct 14 (Tue)==  
-- 3rd Programming Assignment: ==Due Nov 11 (Tue)==  
+- 1st Programming Assignment: ==Due Oct 2 (Thu)==  
+- 2nd Programming Assignment: ==Due Nov 1 (Sat)==  
+- 3rd Programming Assignment: ==Due Nov 22 (Sat)==  
 - Image Generation Challenge Submission: ==Due Nov 15 (Sat)== 
 - Visual Content Creation Contest Submission: ==Due Dec 06 (Sat)== 
 
@@ -98,20 +98,20 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 | :----: | :----: | :----: | :----: | :----: |
 | 1  | Sep 01 | __Course Introduction__<br>[**Slides**]({{links.lec01}}){:target="_blank"} | Sep 03 | __Introduction to Generative Models__<br>[**Slides**]({{links.lec02}}){:target="_blank"}<br>[**Recording**]({{links.rec02}}){:target="_blank"} |
 | 2  | Sep 08 | __DDPM 1__<br>[**Slides**]({{links.lec03}}){:target="_blank"}<br>[**Recording**]({{links.rec03}}){:target="_blank"} | Sep 10 | __DDPM 2__<br>[**Slides**]({{links.lec04}}){:target="_blank"}<br>[**Recording**]({{links.rec04}}){:target="_blank"} |
-| 3  | Sep 15 | __DDIM 1__                      | Sep 18 | ==[Assignment 1 Session]({{links.asgmt01}}){:target="_blank"}== |
-| 4  | Sep 22 | __DDIM 2 / CFG / ControlNet__     | Sep 24 | __PF-ODE / DPM-Solver 1__ |
-| 5  | Sep 29 |  __PF-ODE / DPM-Solver 2__       | Oct 01 | ==[Assignment 2 Session]({{links.asgmt02}}){:target="_blank"}== | 
+| 3  | Sep 15 | __Score-Based Models / DDIM 1__ | Sep 17 | __DDIM 2__ |
+| 4  | Sep 22 | __Inversion / CFG / ControlNet__| Sep 24 | ==[Assignment 1 Session]({{links.asgmt01}}){:target="_blank"}== |
+| 5  | Sep 29 | __PF-ODE / ODE Solvers 1__       | Oct 01 | ==[Demo Session]({{links.demo}}){:target="_blank"}== |
 | 6  | Oct 06 | No Class (Chuseok)              | Oct 08 | No Class (Chuseok) |
-| 7  | Oct 13 |  __Flow Matching 1__            | Oct 15 | __In-Class Test 1__ |
+| 7  | Oct 13 | __PF-ODE / ODE Solvers 2__       | Oct 15 | ==[Assignment 2 Session]({{links.asgmt02}}){:target="_blank"}== |
 | 8  | Oct 20 | No Class (Midterm Week)         | Oct 22 | No class (Midterm Week) |
-| 9  | Oct 27 | __Flow Matching 2__             | Oct 30 | ==[Assignment 3 Session]({{links.asgmt03}}){:target="_blank"}== |
-| 10 | Nov 03 | __Score Distillation__          | Nov 06 | __Inference-Time Guidance__ |
-| 11 | Nov 10 | ==[Demo Session]({{links.demo}}){:target="_blank"}== | Nov 12 | No class (Break) |
-| 12 | Nov 17 | __Guest Lecture 1__             | Nov 20 | __Discrete Diffusion__  |
-| 13 | Nov 24 | __Guest Lecture 2__             | Nov 24 | __In-Class Test 2__ |
-| 14 | Dec 01 | No Class (Conference Trip)      | Dec 04 | No Class (Conference Trip) |
-| 15 | Dec 08 | Project Presentations 1         | Dec 11 | Project Presentations 2 |
-| 16 | Dec 15 | No Class (Final Week)           | Dec 18 | No Class (Final Week) |
+| 9  | Oct 27 | __In-Class Test 1__             | Oct 29 | __Flow Matching 2__ |
+| 10 | Nov 03 | __Flow Matching 2__             | Nov 05 | ==[Assignment 3 Session]({{links.asgmt03}}){:target="_blank"}== |
+| 11 | Nov 10 | __Inference-Time Guidance__     | Nov 12 | No class (Break) |
+| 12 | Nov 17 | __Guest Lecture 1__             | Nov 19 | __Discrete Diffusion__  |
+| 13 | Nov 24 | __Guest Lecture 2__<br>[**Subham Sahoo**](https://s-sahoo.com/) | Nov 26 | Course Summary |
+| 14 | Dec 01 | __In-Class Test 2__             | Dec 03 | No Class (Break) |
+| 15 | Dec 08 | Project Presentations 1         | Dec 10 | Project Presentations 2 |
+| 16 | Dec 15 | No Class (Final Week)           | Dec 17 | No Class (Final Week) |
 
 
 ## AI Coding Assistant Tool Policy
