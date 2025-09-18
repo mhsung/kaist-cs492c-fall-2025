@@ -107,8 +107,8 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 | 9  | Oct 27 | __In-Class Test 1__             | Oct 29 | __Flow Matching 2__ |
 | 10 | Nov 03 | __Flow Matching 2__             | Nov 05 | ==[Assignment 3 Session]({{links.asgmt03}}){:target="_blank"}== |
 | 11 | Nov 10 | __Inference-Time Guidance__     | Nov 12 | No class (Break) |
-| 12 | Nov 17 | __Guest Lecture 1__             | Nov 19 | __Discrete Diffusion__  |
-| 13 | Nov 24 | __Guest Lecture 2__<br>[**Subham Sahoo**](https://s-sahoo.com/) | Nov 26 | Course Summary |
+| 12 | Nov 17 | __Discrete Diffusion 1__ | Nov 19 | __Discrete Diffusion 2 /__<br>__Course Summary__  |
+| 13 | Nov 24 | __Guest Lecture 1__<br>[**Subham Sahoo**](https://s-sahoo.com/) | Nov 26 | __Guest Lecture 2__ |
 | 14 | Dec 01 | __In-Class Test 2__             | Dec 03 | No Class (Break) |
 | 15 | Dec 08 | Project Presentations 1         | Dec 10 | Project Presentations 2 |
 | 16 | Dec 15 | No Class (Final Week)           | Dec 17 | No Class (Final Week) |
