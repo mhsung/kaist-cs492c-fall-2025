@@ -99,7 +99,7 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 | 1  | Sep 01 | __Course Introduction__<br>[**Slides**]({{links.lec01}}){:target="_blank"} | Sep 03 | __Introduction to Generative Models__<br>[**Slides**]({{links.lec02}}){:target="_blank"}<br>[**Recording**]({{links.rec02}}){:target="_blank"} |
 | 2  | Sep 08 | __DDPM 1__<br>[**Slides**]({{links.lec03}}){:target="_blank"}<br>[**Recording**]({{links.rec03}}){:target="_blank"} | Sep 10 | __DDPM 2__<br>[**Slides**]({{links.lec04}}){:target="_blank"}<br>[**Recording**]({{links.rec04}}){:target="_blank"} |
 | 3  | Sep 15 | __Score-Based Models__<br>[**Slides**]({{links.lec05}}){:target="_blank"}<br>[**Recording**]({{links.rec05}}){:target="_blank"} | Sep 17 | __DDIM__<br>[**Slides**]({{links.lec06}}){:target="_blank"}<br>[**Recording**]({{links.rec06}}){:target="_blank"} |
-| 4  | Sep 22 | __CFG / Inversion / ControlNet / LoRA__<br>[**Slides**]({{links.lec07}}){:target="_blank"} | Sep 24 | ==[Assignment 1 Session]({{links.asgmt01}}){:target="_blank"}== |
+| 4  | Sep 22 | __Conditional Generation /<br> Latent Diffusion__<br>[**Slides**]({{links.lec07}}){:target="_blank"}<br>[**Recording**]({{links.rec06}}){:target="_blank"} | Sep 24 | ==[Assignment 1 Session]({{links.asgmt01}}){:target="_blank"}==<br>[**Slides**]({{links.sess01}}){:target="_blank"} |
 | 5  | Sep 29 | __PF-ODE / ODE Solvers 1__       | Oct 01 | ==[Demo Session]({{links.demo}}){:target="_blank"}== |
 | 6  | Oct 06 | No Class (Chuseok)              | Oct 08 | No Class (Chuseok) |
 | 7  | Oct 13 | __PF-ODE / ODE Solvers 2__       | Oct 15 | ==[Assignment 2 Session]({{links.asgmt02}}){:target="_blank"}== |
