@@ -73,7 +73,7 @@ The purpose of the mid-term evaluation is to give all students a reference point
         - Your submission must include the complete codebase necessary to run end-to-end from the TAs' side.
         - TAs will run your code in their environment without additional modifications.
         - For consistent evaluation, the files `sampling.py` and `measure_fid.py` will be replaced with the official versions.
-    2. **A model checkpoint**  
+    2. **A model checkpoint and config json file**  
 - **Evaluation**
     - TAs will run your submitted code in their Python environment.
     - The FID scores measured by TAs will be published on the leaderboard.
@@ -83,7 +83,7 @@ The purpose of the mid-term evaluation is to give all students a reference point
 ### Final Submission
 - **What to submit**:
     1. **Self-contained source code** 
-    2. **A model checkpoint**  
+    2. **A model checkpoint and config json file**  
     3. **2-page write-up**.
         - No template provided.  
         - Maximum of two A4 pages, excluding references.  
