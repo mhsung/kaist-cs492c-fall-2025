@@ -33,6 +33,7 @@ copyright: Copyright &copy; 2025 Minhyuk Sung
 nav:
   - Home: index.md
   - Programming Assignments: programming-assignments.md
+  - Image Generation Challenge: image-generation-challenge.md
 #  - Project: project.md
 #  - Poster: poster.md
 #  - Guest Lecture 1: guest-lecture-or-patashnik.md

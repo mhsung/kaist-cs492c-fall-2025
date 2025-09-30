@@ -56,7 +56,7 @@ In this course, we will discuss the theoretical foundations and practical applic
 - In-Class Participation: 10%
 - In-Class Tests: 20%
 - Programming Assignments: 20%
-- Image Generation Challenge: 25%
+- [Image Generation Challenge](./image-generation-challenge.md){:target="_blank"}: 25%
 - Visual Content Creation Contest: 25%
 
 <!--
