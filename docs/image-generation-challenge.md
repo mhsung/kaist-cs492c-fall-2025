@@ -51,7 +51,8 @@ You are required to use the [Simpsons Face](https://www.kaggle.com/datasets/kost
 ![Dataset](assets/simpson.png){ width=50% }
 
 **You do not need to download the dataset yourself.** We will provide a script in the base code that automatically downloads the dataset.
-The base code will be released soon.
+
+[Base Code]({{links.image_gen}}){:target="_blank" .md-button}
 
 
 ### Evaluation
