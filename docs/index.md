@@ -102,7 +102,7 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 | 4  | Sep 22 | __Conditional Generation /<br> Latent Diffusion__<br>[**Slides**]({{links.lec07}}){:target="_blank"}<br>[**Recording**]({{links.rec07}}){:target="_blank"} | Sep 24 | ==[Assignment 1 Session]({{links.asgmt01}}){:target="_blank"}==<br>[**Slides**]({{links.sess01}}){:target="_blank"} |
 | 5  | Sep 29 | __Diffusion Models in Continuous Time__<br>[**Slides**]({{links.lec08}}){:target="_blank"}<br>[**Recording**]({{links.rec08}}){:target="_blank"} | Oct 01 | ==[Demo Session]({{links.demo}}){:target="_blank"}== |
 | 6  | Oct 06 | No Class (Chuseok)              | Oct 08 | No Class (Chuseok) |
-| 7  | Oct 13 | __ODE Solvers__<br>[**Slides**]({{links.lec09}}){:target="_blank"} | Oct 15 | ==[Assignment 2 Session]({{links.asgmt02}}){:target="_blank"}== |
+| 7  | Oct 13 | __ODE Solvers__<br>[**Slides**]({{links.lec09}}){:target="_blank"}<br>[**Recording**]({{links.rec09}}){:target="_blank"} | Oct 15 | ==[Assignment 2 Session]({{links.asgmt02}}){:target="_blank"}== |
 | 8  | Oct 20 | No Class (Midterm Week)         | Oct 22 | No class (Midterm Week) |
 | 9  | Oct 27 | __In-Class Test 1__             | Oct 29 | __Flow Matching 2__ |
 | 10 | Nov 03 | __Flow Matching 2__             | Nov 05 | ==[Assignment 3 Session]({{links.asgmt03}}){:target="_blank"}== |
