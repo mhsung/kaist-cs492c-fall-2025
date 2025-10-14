@@ -17,7 +17,7 @@ hide:
 
 ## Time & Location
 **Time**: Mon/Wed 10:30 a.m. - 11:45 a.m. (KST)   
-**Location**: E3-5 Rm 210.
+**Location**: E3-5 Room 210.
 
 <!-- [Zoom Link](https://kaist.zoom.us/j/83695846631){:target="_blank" .md-button} -->
 
@@ -54,7 +54,7 @@ In this course, we will discuss the theoretical foundations and practical applic
 
 ## Grading
 - In-Class Participation: 10%
-- In-Class Tests: 20%
+- In-Class Tests(./in-class-tests.md){:target="_blank"}: 20%
 - Programming Assignments: 20%
 - [Image Generation Challenge](./image-generation-challenge.md){:target="_blank"}: 25%
 - Visual Content Creation Contest: 25%
@@ -102,14 +102,14 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 | 4  | Sep 22 | __Conditional Generation /<br> Latent Diffusion__<br>[**Slides**]({{links.lec07}}){:target="_blank"}<br>[**Recording**]({{links.rec07}}){:target="_blank"} | Sep 24 | ==[Assignment 1 Session]({{links.asgmt01}}){:target="_blank"}==<br>[**Slides**]({{links.sess01}}){:target="_blank"} |
 | 5  | Sep 29 | __Diffusion Models in Continuous Time__<br>[**Slides**]({{links.lec08}}){:target="_blank"}<br>[**Recording**]({{links.rec08}}){:target="_blank"} | Oct 01 | ==[Demo Session]({{links.demo}}){:target="_blank"}== |
 | 6  | Oct 06 | No Class (Chuseok)              | Oct 08 | No Class (Chuseok) |
-| 7  | Oct 13 | __ODE Solvers__<br>[**Slides**]({{links.lec09}}){:target="_blank"}<br>[**Recording**]({{links.rec09}}){:target="_blank"} | Oct 15 | ==[Assignment 2 Session]({{links.asgmt02}}){:target="_blank"}== |
+| 7  | Oct 13 | __ODE Solvers__<br>[**Slides**]({{links.lec09}}){:target="_blank"}<br>[**Recording**]({{links.rec09}}){:target="_blank"} | Oct 15 | ==[Assignment 2 Session]({{links.asgmt02}}){:target="_blank"}==<br>[**Slides**]({{links.sess02}}){:target="_blank"} |
 | 8  | Oct 20 | No Class (Midterm Week)         | Oct 22 | No class (Midterm Week) |
-| 9  | Oct 27 | __In-Class Test 1__             | Oct 29 | __Flow Matching 2__ |
+| 9  | Oct 27 | ==[In-Class Test 1](./in-class-tests.md){:target="_blank"}== | Oct 29 | __Flow Matching 2__ |
 | 10 | Nov 03 | __Flow Matching 2__             | Nov 05 | ==[Assignment 3 Session]({{links.asgmt03}}){:target="_blank"}== |
 | 11 | Nov 10 | __Inference-Time Guidance__     | Nov 12 | No class (Break) |
 | 12 | Nov 17 | __Discrete Diffusion 1__ | Nov 19 | __Discrete Diffusion 2 /__<br>__Course Summary__  |
 | 13 | Nov 24 | __Guest Lecture 1__<br>[**Subham Sahoo**](https://s-sahoo.com/) | Nov 26 | __Guest Lecture 2__<br>[**Philipp Henzler**](https://henzler.github.io/) |
-| 14 | Dec 01 | __In-Class Test 2__             | Dec 03 | No Class (Break) |
+| 14 | Dec 01 | ==[In-Class Test 2](./in-class-tests.md){:target="_blank"}== | Dec 03 | No Class (Break) |
 | 15 | Dec 08 | Project Presentations 1         | Dec 10 | Project Presentations 2 |
 | 16 | Dec 15 | No Class (Final Week)           | Dec 17 | No Class (Final Week) |
 

@@ -34,6 +34,7 @@ nav:
   - Home: index.md
   - Programming Assignments: programming-assignments.md
   - Image Generation Challenge: image-generation-challenge.md
+  - In-Class Tests: in-class-tests.md
 #  - Project: project.md
 #  - Poster: poster.md
 #  - Guest Lecture 1: guest-lecture-or-patashnik.md
@@ -57,7 +58,8 @@ extra:
     asgmt02: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment2-DPMSolver
     asgmt03: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment3-Flow
     demo: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Demo
-    image_gen: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Image_Challenge
+    image_gen_repo: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Image_Challenge
+    imgge_gen_slides: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VmZWFKeVdLaVRGSGp4RWc3dkRSeEpNQmN4aWI1Q1hsU2YzQ3lUQ2FwSlEyT2c&cid=60562023B6640282&id=60562023B6640282%21s25279af7898a47318f1120eef0d1c493&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
     rec02: https://youtu.be/96XoVM7PYtQ
     rec03: https://youtu.be/qiFZQvcqTOo
     rec04: https://youtu.be/5_t3uSvdrWg
@@ -68,3 +70,4 @@ extra:
     rec09: https://youtu.be/eKW5AAy5ae8
     colab: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VTRzBSUTEwZFFkSHNHWllsT1FJNUxrQnZaX1RheGppTHphcUxXSzBsb0JtOHc%5FZT1uOFlucFI&cid=60562023B6640282&id=60562023B6640282%21s0d45b42175744707b0665894e408e4b9&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
     sess01: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VTNUZiN0RTWWlWRmt5WEdYQWVwZzJRQkRaSlNOb1drY3pDa1gza2NpTXdnRFE%5FZT1OUGRkRkE&cid=60562023B6640282&id=60562023B6640282%21sb06f452e62d245259325c65c07a98364&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
+    sess02: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VTOEdaSjZSZHZ0RHJwNFJNVGIxZmo0QkZ6NVRGT196b2l0ejI2QXpfbjRhRFE%5FZT1iMkVKb3U&cid=60562023B6640282&id=60562023B6640282%21s9e64062f769143fbae9e113136f57e3e&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp

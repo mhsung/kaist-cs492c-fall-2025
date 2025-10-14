@@ -17,6 +17,9 @@ hide:
 ^^**Where to submit**^^: ==KLMS==  
 
 
+[Introduction Slides]({{links.image_gen_slides}}){:target="_blank" .md-button}
+
+
 ### What to Do
 In this challenge, your task is to train an **image diffusion/flow model** beyond the previous 2D toy experiment setups from the assignments. After training, you are encouraged to explore and apply any techniques you find effective for achieving **high-quality generation** with only **a few sampling steps**.
 
@@ -52,7 +55,7 @@ You are required to use the [Simpsons Face](https://www.kaggle.com/datasets/kost
 
 **You do not need to download the dataset yourself.** We will provide a script in the base code that automatically downloads the dataset.
 
-[Base Code]({{links.image_gen}}){:target="_blank" .md-button}
+[Base Code]({{links.image_gen_repo}}){:target="_blank" .md-button}
 
 
 ### Evaluation
