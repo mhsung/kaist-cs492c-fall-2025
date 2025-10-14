@@ -15,7 +15,7 @@ hide:
 ^^**1st Test**^^: ==October 27 (Monday), 10:30 a.m. – 11:50 a.m. (KST)==   
 ^^**2nd Test**^^: ==December 1 (Monday), 10:30 a.m. – 11:50 a.m. (KST)==  
 ^^**Location**^^: ==E3-5 Room 201 and Room 101==  
-The test will start at 10:30 a.m. sharp. **Please come to the classroom by 10:20 am**.<br>
+The test will start at 10:30 a.m. sharp. **Please come to the classroom by 10:20 a.m.**<br>
 
 
 ### Classrooms
