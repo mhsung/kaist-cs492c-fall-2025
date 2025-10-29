@@ -12,7 +12,7 @@ hide:
 
 ## Image Generation Challenge
 
-^^**Mid-Term Evaluation Submission  Due**^^: ==November 1 (Sunday), 23:59 KST==  
+^^**Mid-Term Evaluation Submission  Due**^^: ==November 2 (Sunday), 23:59 KST==  
 ^^**Final Submission Due**^^: ==November 15 (Saturday), 23:59 KST==  
 ^^**Where to submit**^^: ==KLMS==  
 
