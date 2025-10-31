@@ -54,7 +54,7 @@ In this course, we will discuss the theoretical foundations and practical applic
 
 ## Grading
 - In-Class Participation: 10%
-- In-Class Tests(./in-class-tests.md){:target="_blank"}: 20%
+- [In-Class Tests](./in-class-tests.md){:target="_blank"}: 20%
 - Programming Assignments: 20%
 - [Image Generation Challenge](./image-generation-challenge.md){:target="_blank"}: 25%
 - Visual Content Creation Contest: 25%
