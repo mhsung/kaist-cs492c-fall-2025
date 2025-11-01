@@ -104,7 +104,7 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 | 6  | Oct 06 | No Class (Chuseok)              | Oct 08 | No Class (Chuseok) |
 | 7  | Oct 13 | __ODE Solvers__<br>[**Slides**]({{links.lec09}}){:target="_blank"}<br>[**Recording**]({{links.rec09}}){:target="_blank"} | Oct 15 | ==[Assignment 2 Session]({{links.asgmt02}}){:target="_blank"}==<br>[**Slides**]({{links.sess02}}){:target="_blank"} |
 | 8  | Oct 20 | No Class (Midterm Week)         | Oct 22 | No class (Midterm Week) |
-| 9  | Oct 27 | ==[In-Class Test 1](./in-class-tests.md){:target="_blank"}== | Oct 29 | __Flow Matching 1__<br>[**Slides**]({{links.lec10}}){:target="_blank"} |
+| 9  | Oct 27 | ==[In-Class Test 1](./in-class-tests.md){:target="_blank"}== | Oct 29 | __Flow Matching 1__<br>[**Slides**]({{links.lec10}}){:target="_blank"}<br>[**Recording**]({{links.rec10}}){:target="_blank"} |
 | 10 | Nov 03 | __Flow Matching 2__             | Nov 05 | ==[Assignment 3 Session]({{links.asgmt03}}){:target="_blank"}== |
 | 11 | Nov 10 | __Inference-Time Guidance__     | Nov 12 | No class (Break) |
 | 12 | Nov 17 | __Discrete Diffusion 1__ | Nov 19 | __Discrete Diffusion 2 /__<br>__Course Summary__  |
