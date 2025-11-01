@@ -1,0 +1,612 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Minhyuk Sung">
+      
+      
+        <link rel="canonical" href="https://diffusion.kaist.ac.kr/poster/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>CS492(D): Diffusion Models and Their Applications - CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-B8SSD5F8FW"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-B8SSD5F8FW",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-B8SSD5F8FW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cs492d-diffusion-models-and-their-applications" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)" class="md-header__button md-logo" aria-label="CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CS492(D): Diffusion Models and Their Applications
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../programming-assignments/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Programming Assignments
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../in-class-tests/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  In-Class Tests
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../image-generation-challenge/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Image Generation Challenge
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)" class="md-nav__button md-logo" aria-label="CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg>
+
+    </a>
+    CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../programming-assignments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Programming Assignments
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../in-class-tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    In-Class Tests
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../image-generation-challenge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Image Generation Challenge
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#poster-sessions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Poster Sessions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Poster Sessions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#poster-session-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Poster Session Guidelines
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#presentation-schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation Schedule
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="cs492d-diffusion-models-and-their-applications">CS492(D): Diffusion Models and Their Applications</h1>
+<h3><b>
+<a href="http://mhsung.github.io/" target="_blank">Minhyuk Sung</a>, <a href="https://www.kaist.ac.kr/" target="_blank">KAIST</a>, Fall 2024
+</b></h3>
+
+<h2 id="poster-sessions">Poster Sessions</h2>
+<p><ins>1st Poster Session</ins>: <mark>Dec 2 (Mon).  1:00 p.m. - 2:20 p.m. (KST).</mark><br />
+<ins>2nd Poster Session</ins>: <mark>Dec 4 (Wed).  1:00 p.m. - 2:20 p.m. (KST).</mark><br />
+<ins>Where</ins>: Gather.town (The link will be provided soon.)</p>
+<p>The poster sessions are essential for showcasing your project outputs to your classmates. There will be two sessions, and you are required to present your poster on one of the days. Attendance at both sessions is mandatory.</p>
+<h3 id="poster-session-guidelines">Poster Session Guidelines</h3>
+<ul>
+<li>
+<p><strong>All sessions are mandatory.</strong> Your attendance will be checked at the beginning (1:00 pm sharp), in the middle, and at the end (2:20 pm sharp) of each session. <strong>Please join the sessions 10 minutes in advance.</strong></p>
+</li>
+<li>
+<p>Your <strong>camera</strong> and <strong>mic</strong> must be turned on <strong>all the time</strong>.</p>
+</li>
+<li>
+<p><strong>Find your poster BEFORE the sessions</strong>, and also check whether your camera and mic work, and you can share your screen.</p>
+</li>
+<li>
+<p>Check your presentation date below. You will play a role of a <strong>presenter</strong> in one session and a <strong>questioner</strong> in the other session.</p>
+</li>
+<li>
+<p>During the session you present, at least one team member must remain on <strong>standby</strong> in front of your poster for the entire duration to address any questions. Team members may take turns presenting. Please note that the presentation is one of the factors in <a href="../project/#poster-sessions" target="_blank">project evaluation</a>.</p>
+</li>
+<li>
+<p>It is recommended to prepare a <strong>1-minute pitch</strong> to start your poster presentation.</p>
+</li>
+<li>
+<p>It is NOT allowed to share your screen to show additional results.</p>
+</li>
+<li>
+<p>All <strong>questioners</strong> are required to <strong>submit the peer review form by 2:30 PM</strong> on the day of the poster session. Missing the deadline will result in a 20% penalty to your project score, as specified on the <a href="../project/#important-what-is-allowed-and-what-is-not-allowed-please-read-carefully" target="_blank">project</a> page. Please note that you are not required to submit the peer review form if you are presenting on that day.</p>
+</li>
+<li>
+<p>All discussions during the poster sessions must be done in <strong>English</strong>.</p>
+</li>
+</ul>
+<h3 id="presentation-schedule">Presentation Schedule</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Instructor<br>Schedule</th>
+<th style="text-align: center;">Session 1 (Monday)</th>
+<th style="text-align: center;">Session 2 (Wednesday)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1:05 pm</td>
+<td style="text-align: center;"><strong>Team 1</strong></td>
+<td style="text-align: center;"><strong>Team 2</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1:10 pm</td>
+<td style="text-align: center;"><strong>Team 3</strong></td>
+<td style="text-align: center;"><strong>Team 4</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1:15 pm</td>
+<td style="text-align: center;"><strong>Team 5</strong></td>
+<td style="text-align: center;"><strong>Team 6</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1:20 pm</td>
+<td style="text-align: center;"><strong>Team 7</strong></td>
+<td style="text-align: center;"><strong>Team 8</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1:25 pm</td>
+<td style="text-align: center;"><strong>Team 9</strong></td>
+<td style="text-align: center;"><strong>Team 10</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1:30 pm</td>
+<td style="text-align: center;"><strong>Team 11</strong></td>
+<td style="text-align: center;"><strong>Team 12</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1:35 pm</td>
+<td style="text-align: center;"><strong>Team 13</strong></td>
+<td style="text-align: center;"><strong>Team 14</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1:40 pm</td>
+<td style="text-align: center;"><strong>Team 15</strong></td>
+<td style="text-align: center;"><strong>Team 16</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1:45 pm</td>
+<td style="text-align: center;"><strong>Team 17</strong></td>
+<td style="text-align: center;"><strong>Team 18</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1:50 pm</td>
+<td style="text-align: center;"><strong>Team 19</strong></td>
+<td style="text-align: center;"><strong>Team 20</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">1:55 pm</td>
+<td style="text-align: center;"><strong>Team 21</strong></td>
+<td style="text-align: center;"><strong>Team 22</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2:00 pm</td>
+<td style="text-align: center;"><strong>Team 23</strong></td>
+<td style="text-align: center;"><strong>Team 24</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2:05 pm</td>
+<td style="text-align: center;"><strong>Team 25</strong></td>
+<td style="text-align: center;"><strong>Team 26</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2:10 pm</td>
+<td style="text-align: center;"><strong>Team 27</strong></td>
+<td style="text-align: center;"><strong>Team 28</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2:15 pm</td>
+<td style="text-align: center;"><strong>Team 29</strong></td>
+<td style="text-align: center;"><strong>Team 30</strong></td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Minhyuk Sung
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
