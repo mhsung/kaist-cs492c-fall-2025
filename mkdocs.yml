@@ -33,8 +33,8 @@ copyright: Copyright &copy; 2025 Minhyuk Sung
 nav:
   - Home: index.md
   - Programming Assignments: programming-assignments.md
-  - Image Generation Challenge: image-generation-challenge.md
   - In-Class Tests: in-class-tests.md
+  - Image Generation Challenge: image-generation-challenge.md
 #  - Project: project.md
 #  - Poster: poster.md
 #  - Guest Lecture 1: guest-lecture-or-patashnik.md
@@ -69,6 +69,7 @@ extra:
     rec07: https://youtu.be/elW_X0ezM70
     rec08: https://youtu.be/by_flhcQJj4
     rec09: https://youtu.be/eKW5AAy5ae8
+    rec10: https://youtu.be/-1hgQC58Nfc
     colab: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VTRzBSUTEwZFFkSHNHWllsT1FJNUxrQnZaX1RheGppTHphcUxXSzBsb0JtOHc%5FZT1uOFlucFI&cid=60562023B6640282&id=60562023B6640282%21s0d45b42175744707b0665894e408e4b9&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
     sess01: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VTNUZiN0RTWWlWRmt5WEdYQWVwZzJRQkRaSlNOb1drY3pDa1gza2NpTXdnRFE%5FZT1OUGRkRkE&cid=60562023B6640282&id=60562023B6640282%21sb06f452e62d245259325c65c07a98364&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
     sess02: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VTOEdaSjZSZHZ0RHJwNFJNVGIxZmo0QkZ6NVRGT196b2l0ejI2QXpfbjRhRFE%5FZT1iMkVKb3U&cid=60562023B6640282&id=60562023B6640282%21s9e64062f769143fbae9e113136f57e3e&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
