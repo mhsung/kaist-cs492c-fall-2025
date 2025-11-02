@@ -105,8 +105,8 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 | 7  | Oct 13 | __ODE Solvers__<br>[**Slides**]({{links.lec09}}){:target="_blank"}<br>[**Recording**]({{links.rec09}}){:target="_blank"} | Oct 15 | ==[Assignment 2 Session]({{links.asgmt02}}){:target="_blank"}==<br>[**Slides**]({{links.sess02}}){:target="_blank"} |
 | 8  | Oct 20 | No Class (Midterm Week)         | Oct 22 | No class (Midterm Week) |
 | 9  | Oct 27 | ==[In-Class Test 1](./in-class-tests.md){:target="_blank"}== | Oct 29 | __Flow Matching 1__<br>[**Slides**]({{links.lec10}}){:target="_blank"}<br>[**Recording**]({{links.rec10}}){:target="_blank"} |
-| 10 | Nov 03 | __Flow Matching 2__             | Nov 05 | ==[Assignment 3 Session]({{links.asgmt03}}){:target="_blank"}== |
-| 11 | Nov 10 | __Inference-Time Guidance__     | Nov 12 | No class (Break) |
+| 10 | Nov 03 | __Flow Matching 2__<br>[**Slides**]({{links.lec11}}){:target="_blank"} | Nov 05 | ==[Assignment 3 Session]({{links.asgmt03}}){:target="_blank"}== |
+| 11 | Nov 10 | __Inference-Time Guidance 1__     | Nov 12 | __Inference-Time Guidance 2<br>Score Distillation Sampling__ |
 | 12 | Nov 17 | __Discrete Diffusion 1__ | Nov 19 | __Discrete Diffusion 2 /__<br>__Course Summary__  |
 | 13 | Nov 24 | __Guest Lecture 1__<br>[**Subham Sahoo**](https://s-sahoo.com/) | Nov 26 | __Guest Lecture 2__<br>[**Philipp Henzler**](https://henzler.github.io/) |
 | 14 | Dec 01 | ==[In-Class Test 2](./in-class-tests.md){:target="_blank"}== | Dec 03 | No Class (Break) |
