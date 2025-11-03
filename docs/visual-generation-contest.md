@@ -10,7 +10,7 @@ hide:
 </b></h3>
 
 
-## Visual Creation Contest
+## Visual Generation Contest
 
 ^^**Submission Due**^^: ==December 6 (Saturday), 23:59 KST==  
 ^^**Where to submit**^^: ==KLMS==  
