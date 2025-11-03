@@ -10,7 +10,7 @@ hide:
 </b></h3>
 
 
-## Visual Content Creation Contest
+## Visual Creation Contest
 
 ^^**Submission Due**^^: ==December 6 (Saturday), 23:59 KST==  
 ^^**Where to submit**^^: ==KLMS==  
@@ -52,29 +52,31 @@ While topics from lectures, such as text-to-image foundation models, score disti
 - **Failure to cite existing code, models, and assets used in the project in the write-up will result in a zero score.**
 
 
-### What to submit
+### What to Submit
+
+[Poster and Write-Up Templates]({{links.templates}}){:target="_blank" .md-button}  
+
 1. A poster
-    - Name: Team_{TEAM ID}_poster.pdf (e.g., Team_10_poster.pdf)
+    - Please use the poster template in the link above.
+    - Name the submission file "Team_{TEAM ID}_poster.pdf" (e.g., Team_10_poster.pdf).
     - Format: PDF
-    - Resolution: Up to 5000 x 3500 mm
-    - File Size: Not exceeding 10 MB
-    - **If you do not submit your poster by the deadline, you won’t be allowed to present at the poster session, resulting in a zero score in peer evaluation.**
-2. Source code and Data
-    - Ensure reproducibility of your work with your provided code and data.
-    - **Code/data that cannot reproduce your work will be considered as not submitted, resulting in a zero score.**
+    - File size limit: 10 MB
+    - **If you do not submit your poster by the deadline, you will NOT be allowed to present at the poster session, resulting in a zero score in peer evaluation.**
+2. Source code and data
+    - Ensure the reproducibility of your work with your provided code and data.
+    - **Code or data that cannot reproduce your results will be considered as not submitted, resulting in a zero score.**
 3. Write-up
-    - A write-up including
+    - It is not required to use the template in the link above, but your write-up must include:
         - Project title
-        - Teammates' names
-        - Teammates' student IDs
+        - Teammates' names and student IDs
         - Brief description of the visual content
         - Discussion of technical aspects
         - Discussion of artistic aspects
         - Reproduction steps using your code and data
-    - Name: Team_{TEAM ID}_writeup.pdf (e.g., Team_10_writeup.pdf)
+    - Name the submission file "Team_{TEAM ID}_writeup.pdf" (e.g., Team_10_writeup.pdf).
     - Format: PDF
-    - Length: Up to 4 pages in A4 size, excluding references.
-    - File Size: Not exceeding 10 MB
+    - Length limit: Up to 4 pages in A4 size, excluding references.
+    - File size limit: 10 MB
     - **Properly cite all the code and resources you have used. Missing references will be considered as misconduct, resulting in a zero score.**
 
 

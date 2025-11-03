@@ -55,9 +55,9 @@ In this course, we will discuss the theoretical foundations and practical applic
 ## Grading
 - In-Class Participation: 10%
 - [In-Class Tests](./in-class-tests.md){:target="_blank"}: 20%
-- Programming Assignments: 20%
+- [Programming Assignments](./programming-assignments.md){:target="_blank"}: 20%
 - [Image Generation Challenge](./image-generation-challenge.md){:target="_blank"}: 25%
-- Visual Content Creation Contest: 25%
+- [Visual Generation Contest](./visual-generation-contest.md){:target="_blank"}: 25%
 
 <!--
 ## Paper List
@@ -88,7 +88,7 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 - 2nd Programming Assignment: ==Due Nov 1 (Sat)==  
 - 3rd Programming Assignment: ==Due Nov 22 (Sat)==  
 - Image Generation Challenge Submission: ==Due Nov 15 (Sat)== 
-- Visual Content Creation Contest Submission: ==Due Dec 06 (Sat)== 
+- Visual Generation Contest Submission: ==Due Dec 06 (Sat)== 
 
 
 ## Schedule
