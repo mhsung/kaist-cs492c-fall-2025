@@ -6,7 +6,7 @@ hide:
 
 # [Subham Sahoo](https://s-sahoo.com/){:target="_blank"}
 ## Simple and Effective Masked Diffusion Language Models
-### Ph.D. Student at Cornell Tech<br>November 24, 2025 (Mon), 10:30 a.m. KST<br>Online (Zoom).
+### Ph.D. Candidate at Cornell Tech<br>November 24, 2025 (Mon), 10:30 a.m. KST<br>Online (Zoom).
 
 ### <b>Guest Lecture at [CS492(C): Diffusion and Flow Models](../){:target="_blank"}<br>[Minhyuk Sung](http://mhsung.github.io/){:target="_blank"}, [KAIST](https://www.kaist.ac.kr/){:target="_blank"}, Fall 2025</b>
 
