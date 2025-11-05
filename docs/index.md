@@ -108,7 +108,7 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 | 10 | Nov 03 | __Flow Matching 2__<br>[**Slides**]({{links.lec11}}){:target="_blank"}<br>[**Recording**]({{links.rec11}}){:target="_blank"} | Nov 05 | ==[Assignment 3 Session]({{links.asgmt03}}){:target="_blank"}== |
 | 11 | Nov 10 | __Inference-Time Guidance 1__     | Nov 12 | __Inference-Time Guidance 2<br>Score Distillation__ |
 | 12 | Nov 17 | __Discrete Diffusion 1__ | Nov 19 | __Discrete Diffusion 2 /__<br>__Course Summary__  |
-| 13 | Nov 24 | __Guest Lecture 1__<br>[**Subham Sahoo**](https://s-sahoo.com/) | Nov 26 | __Guest Lecture 2__<br>[**Philipp Henzler**](https://henzler.github.io/) |
+| 13 | Nov 24 | __Guest Lecture 1__<br>[**Subham Sahoo**](./guest-lecture-subham-sahoo.md) | Nov 26 | __Guest Lecture 2__<br>[**Philipp Henzler**](https://henzler.github.io/) |
 | 14 | Dec 01 | ==[In-Class Test 2](./in-class-tests.md){:target="_blank"}== | Dec 03 | No Class (Break) |
 | 15 | Dec 08 | Project Presentations 1         | Dec 10 | Project Presentations 2 |
 | 16 | Dec 15 | No Class (Final Week)           | Dec 17 | No Class (Final Week) |

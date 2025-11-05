@@ -18,7 +18,7 @@ hide:
 ^^**Presentation Session 2**^^: December 10 (Wednesday), 10:30 a.m. - 11:50 a.m. KST  
 
 
-<!-- [Introduction Slides]({{links.image_gen_slides}}){:target="_blank" .md-button} -->
+[Introduction Slides]({{links.visual_gen_slides}}){:target="_blank" .md-button}
 
 
 ### What to Do

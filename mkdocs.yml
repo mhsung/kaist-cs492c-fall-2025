@@ -36,9 +36,7 @@ nav:
   - In-Class Tests: in-class-tests.md
   - Image Generation Challenge: image-generation-challenge.md
   - Visual Generation Contest: visual-generation-contest.md
-#  - Project: project.md
-#  - Poster: poster.md
-#  - Guest Lecture 1: guest-lecture-or-patashnik.md
+  - Guest Lecture 1: guest-lecture-subham-sahoo.md
 #  - Guest Lecture 2: guest-lecture-jiaming-song.md
 
 extra:
@@ -62,7 +60,8 @@ extra:
     asgmt03: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment3-Flow
     demo: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Demo
     image_gen_repo: https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Image_Challenge
-    imgge_gen_slides: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VmZWFKeVdLaVRGSGp4RWc3dkRSeEpNQmN4aWI1Q1hsU2YzQ3lUQ2FwSlEyT2c&cid=60562023B6640282&id=60562023B6640282%21s25279af7898a47318f1120eef0d1c493&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
+    imgge_gen_slides: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VmZWFKeVdLaVRGSGp4RWc3dkRSeEpNQjdTekhLMnpQNmtpVVlBQ3JtaFRONHc%5FZT1lRXhxR0Q&cid=60562023B6640282&id=60562023B6640282%21s25279af7898a47318f1120eef0d1c493&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
+    visual_gen_slides: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VScW5zWmhzOU5KTHRxT3FGWnE3S3RJQjJKMnBxQ0EzbVVmUF9nS3VoNVpOWGc%5FZT1tY1hUY2s&cid=60562023B6640282&id=60562023B6640282%21s98b1a71af46c4bd2b6a3aa159abb2ad2&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
     rec02: https://youtu.be/96XoVM7PYtQ
     rec03: https://youtu.be/qiFZQvcqTOo
     rec04: https://youtu.be/5_t3uSvdrWg
@@ -76,4 +75,6 @@ extra:
     colab: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VTRzBSUTEwZFFkSHNHWllsT1FJNUxrQnZaX1RheGppTHphcUxXSzBsb0JtOHc%5FZT1uOFlucFI&cid=60562023B6640282&id=60562023B6640282%21s0d45b42175744707b0665894e408e4b9&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
     sess01: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VTNUZiN0RTWWlWRmt5WEdYQWVwZzJRQkRaSlNOb1drY3pDa1gza2NpTXdnRFE%5FZT1OUGRkRkE&cid=60562023B6640282&id=60562023B6640282%21sb06f452e62d245259325c65c07a98364&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
     sess02: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VTOEdaSjZSZHZ0RHJwNFJNVGIxZmo0QkZ6NVRGT196b2l0ejI2QXpfbjRhRFE%5FZT1iMkVKb3U&cid=60562023B6640282&id=60562023B6640282%21s9e64062f769143fbae9e113136f57e3e&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
+    sess03: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VWak5UdTJmVVVOSGd1bkV3WHpucFc4Qm1PcEhiajE1d2JkdjBqenI2c2JOUXc%5FZT1TSW1iS0Q&cid=60562023B6640282&id=60562023B6640282%21sed4ecd58519f474382e9c4c17ce7a56f&parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&o=OneUp
     templates: https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL3UvYy82MDU2MjAyM2I2NjQwMjgyL0VRWjVLUncyMWFwR2s0UXRIS0xPeXFvQkcyQ2NEbmlHb09XY1diUlF0VmpyMHc%5FZT1oVUFucXE&cid=60562023B6640282&id=60562023B6640282%21s1c297906d53646aa93842d1ca2cecaaa&parId=60562023B6640282%21s78c041bd29af458f9c22a3ecb87bb3be&o=OneUp
+    zoom: https://kaist.zoom.us/j/88406148948
