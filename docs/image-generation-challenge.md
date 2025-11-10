@@ -60,13 +60,30 @@ You are required to use the [Simpsons Face](https://www.kaggle.com/datasets/kost
 
 ### Evaluation
 
-This is a **team-based competition**. The performance of your image generative models will be evaluated quantitatively using [Fréchet Inception Distance (FID)](https://en.wikipedia.org/wiki/Fr%C3%A9chet_inception_distance){:target="_blank"} scores at Numbers of Function Evaluations (NFEs) = 1, 2, and 4.
+- This is a **team-based competition**. The performance of your image generative models will be evaluated quantitatively using [Fréchet Inception Distance (FID)](https://en.wikipedia.org/wiki/Fr%C3%A9chet_inception_distance){:target="_blank"} scores at Numbers of Function Evaluations (NFEs) = 1, 2, and 4.
 
-**Final grading will be determined relative to the best FID score achieved at each NFE.** In other words, the team with the lowest (best) FID for a given NFE will set the benchmark, and other teams will be graded proportionally against that score.
+- The TAs will provide FID scores computed using their own implementation of diffusion and flow models as reference values (the code will not be released). You are expected to match or surpass these reference FIDs.
 
-The TAs will provide FID scores computed using their own implementation of diffusion and flow models as reference values (the code will not be released). You are expected to match or surpass these reference FIDs.
+- Additionally, to help everyone gauge progress, there will be a [Mid-Term Evaluation](#mid-term-evaluation-submission-optional){:target="_blank"}  where teams can submit intermediate results. **Participation is optional**, but the top team at each NFE in the mid-term evaluation that also outperforms the TAs’ FID scores will receive **bonus credit** toward the final grade. All submitted results will be shared anonymously with the class so that teams can see how others are performing.
 
-Additionally, to help everyone gauge progress, there will be a [Mid-Term Evaluation](#mid-term-evaluation-submission-optional){:target="_blank"}  where teams can submit intermediate results. **Participation is optional**, but the top team at each NFE in the mid-term evaluation that also outperforms the TAs’ FID scores will receive **bonus credit** toward the final grade. All submitted results will be shared anonymously with the class so that teams can see how others are performing.
+- **Final grading will be determined relative to the best FID score achieved for each NFE.** Specifically, the score for each NFE is calculated as follows:
+    $$
+    \text{Score} = \max\!\left(
+    \frac{\text{TA's FID} - \text{Your FID}}
+    {\text{TA's FID} - \text{Lowest FID}} \times 4 + 5,\; 0
+    \right)
+    $$
+    - When Your FID=Lowest FID, you get 9 points for that NFE.
+    - When Your FID=TA′s FID, you get 5 points for that NFE.
+
+- Bonus credits per NFE:
+    - **Mid-term Evaluation Bonus**: Every team that outperforms the TA’s FID at the mid-term evaluation receives +0.5 point (for that NFE).
+    - **Winner Bonus**: If your team achieves the lowest FID for an NFE, you receive +0.5 point (for that NFE).
+
+- In total, the image generation challenge is worth a maximum of 30 points.
+
+<!--In other words, the team with the lowest (best) FID for a given NFE will set the benchmark, and other teams will be graded proportionally against that score.-->
+
 
 
 ### Mid-Term Evaluation Submission (Optional)
@@ -78,11 +95,12 @@ The purpose of the mid-term evaluation is to give all students a reference point
         - TAs will run your code in their environment without additional modifications.
         - For consistent evaluation, the files `sampling.py` and `measure_fid.py` will be replaced with the official versions.
     2. **A model checkpoint and config json file**  
-- **Evaluation**
+- **Grading Procedure**
     - TAs will run your submitted code in their Python environment.
     - The FID scores measured by TAs will be published on the leaderboard.
     - Submissions that fail to run in the TA environment will be marked as failed on the leaderboard.
     - Among the submissions exceeding the TAs' result, the top-k will earn bonus credit.  
+
 
 ### Final Submission
 - **What to submit**:
@@ -98,8 +116,6 @@ The purpose of the mid-term evaluation is to give all students a reference point
             - **Citations**: All external code, and papers used must be properly cited.
         - ^^Missing any of these items will result in a penalty.^^
         - ^^If the write-up exceeds two pages, any content beyond the second page will be ignored, which may lead to missing required items.^^
-
-
 
 ### Grading
 ^^**There is no late day. Submit on time.**^^  
