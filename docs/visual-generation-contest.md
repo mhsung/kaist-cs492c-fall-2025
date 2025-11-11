@@ -41,12 +41,12 @@ While topics from lectures, such as text-to-image foundation models, score disti
 
 - You are required to work with the same team members as in the previous project.
 
-- Your final submission must include data such as images, 3D assets, or other visual outputs generated using your own code and the designated model.
+- Your final submission must include data such as images or other visual outputs generated using your own code and the designated model.
 
 - **DO NOT USE the following (violations will result in a zero score):**
     - Any commercial image generators (e.g., ChatGPT, Gemini)
     - Any commercial software
-    - Any existing 3D assets from online repositories, whether free or paid
+    - Any existing visual assets from online repositories, whether free or paid
     - Closed-source software (e.g., PolyCam, Luma AI)
 
 - **Failure to cite existing code, models, and assets used in the project in the write-up will result in a zero score.**
