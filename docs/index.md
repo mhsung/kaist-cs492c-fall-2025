@@ -107,7 +107,7 @@ ALL ASSIGNMENTS ARE DUE 23:59 KST.
 | 9  | Oct 27 | ==[In-Class Test 1](./in-class-tests.md){:target="_blank"}== | Oct 29 | __Flow Matching 1__<br>[**Slides**]({{links.lec10}}){:target="_blank"}<br>[**Recording**]({{links.rec10}}){:target="_blank"} |
 | 10 | Nov 03 | __Flow Matching 2__<br>[**Slides**]({{links.lec11}}){:target="_blank"}<br>[**Recording**]({{links.rec11}}){:target="_blank"} | Nov 05 | ==[Assignment 3 Session]({{links.asgmt03}}){:target="_blank"}== |
 | 11 | Nov 10 | __Inference-Time Guidance 1__<br>[**Slides**]({{links.lec12}}){:target="_blank"}<br>[**Recording**]({{links.rec12}}){:target="_blank"} | Nov 12 | No Class (Break)  |
-| 12 | Nov 17 | __Inference-Time Guidance 2__<br>[**Slides**]({{links.lec13}}){:target="_blank"}<br>[**Recording**]({{links.rec13}}){:target="_blank"} | Nov 19 | __Score Distillation<br>Course Summary__  |
+| 12 | Nov 17 | __Inference-Time Guidance 2__<br>[**Slides**]({{links.lec13}}){:target="_blank"}<br>[**Recording**]({{links.rec13}}){:target="_blank"} | Nov 19 | __Score Distillation<br>Course Summary__<br>[**Slides**]({{links.lec14}}){:target="_blank"}  |
 | 13 | Nov 24 | __Guest Lecture 1__<br>[**Subham Sahoo**](./guest-lecture-subham-sahoo.md) | Nov 26 | __Guest Lecture 2__<br>[**Philipp Henzler**](./guest-lecture-philipp-henzler.md) |
 | 14 | Dec 01 | ==[In-Class Test 2](./in-class-tests.md){:target="_blank"}== | Dec 03 | No Class (Break) |
 | 15 | Dec 08 | Project Presentations 1         | Dec 10 | Project Presentations 2 |
