@@ -39,7 +39,7 @@ While topics from lectures, such as text-to-image foundation models, score disti
 
 - **For pretrained models, you are required to use only the following two models**
     - **[Stable Diffusion XL (SDXL)](https://huggingface.co/docs/diffusers/en/api/pipelines/stable_diffusion/stable_diffusion_xl)**.
-    - **[Stable Diffusion 2](https://huggingface.co/docs/diffusers/en/api/pipelines/stable_diffusion/stable_diffusion_2)**. 
+    - **[Stable Diffusion 2](https://huggingface.co/Manojb/stable-diffusion-2-base)**. 
 - While architectural modifications using ControlNet, LoRA, or additional neural networks for guidance (e.g., pretrained reward models) are permitted, the use of any other pretrained generative models is not allowed. Commercial generative models are also not permitted. Fine-tuning or training a generative model from scratch is allowed.
 
 - You are required to work with the same team members as in the previous project.
@@ -112,12 +112,11 @@ Each individual will assign a Technology Score and Creativity Score to the resul
 
 - **Find your poster BEFORE the sessions**, and also check whether your camera and mic work, and you can share your screen.
 
-- Check your presentation date below. You will play a role of a **presenter** in one session and a **questioner** in the other session.
+- You will play a role of a **presenter** in one session and a **questioner** in the other session. **Odd** number teams will present on **Monday**, and **even** number teams will present on **Wednesday**.
 
 - Each session will begin with a **1-minute pitch** from the presenters. When it's your turn, please follow these steps:
-    - Introduce yourself (just your name).
-    - Share your screen and play the video.
-    - Provide a 1-minute description of your work.
+    - Introduce your team (team ID and your names).
+    - Share your screen and present your poster in 1 minute.
 
 - In the session you present, you must be on **standby** in front of your poster during the entire session and wait for the questioners.
 
