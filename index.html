@@ -1,0 +1,1101 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Minhyuk Sung">
+      
+      
+        <link rel="canonical" href="https://diffusion.kaist.ac.kr/">
+      
+      
+      
+        <link rel="next" href="programming-assignments/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-B8SSD5F8FW"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-B8SSD5F8FW",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-B8SSD5F8FW",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cs492c-diffusion-and-flow-models" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)" class="md-header__button md-logo" aria-label="CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="programming-assignments/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Programming Assignments
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="in-class-tests/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  In-Class Tests
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="image-generation-challenge/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Image Generation Challenge
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="visual-generation-contest/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Visual Generation Contest
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="guest-lecture-subham-sahoo/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Guest Lecture 1
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="guest-lecture-philipp-henzler/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Guest Lecture 2
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)" class="md-nav__button md-logo" aria-label="CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"/></svg>
+
+    </a>
+    CS492(C) Diffusion and Flow Models (KAIST, Fall 2025)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#time-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time &amp; Location
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-staff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Course Staff
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#past-years" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Past Years
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grading
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Useful Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-dates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important Dates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schedule
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-coding-assistant-tool-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Coding Assistant Tool Policy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="programming-assignments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Programming Assignments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="in-class-tests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    In-Class Tests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="image-generation-challenge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Image Generation Challenge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="visual-generation-contest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Generation Contest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guest-lecture-subham-sahoo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guest Lecture 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guest-lecture-philipp-henzler/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guest Lecture 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#time-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Time &amp; Location
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Description
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-staff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Course Staff
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#past-years" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Past Years
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Grading
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#useful-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Useful Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-dates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important Dates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#schedule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schedule
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-coding-assistant-tool-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AI Coding Assistant Tool Policy
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="cs492c-diffusion-and-flow-models">CS492(C): Diffusion and Flow Models</h1>
+<h3><b>
+<a href="http://mhsung.github.io/" target="_blank">Minhyuk Sung</a>, <a href="https://www.kaist.ac.kr/" target="_blank">KAIST</a>, Fall 2025
+</b></h3>
+<p><br /></p>
+<p><img alt="Teaser" src="assets/teaser.png" width="97.5%" /><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></p>
+<h2 id="time-location">Time &amp; Location</h2>
+<p><strong>Time</strong>: Mon/Wed 10:30 a.m. - 11:45 a.m. (KST) <br />
+<strong>Location</strong>: E3-5 Room 210.</p>
+<!-- [Zoom Link](https://kaist.zoom.us/j/83695846631){:target="_blank" .md-button} -->
+
+<h2 id="description">Description</h2>
+<p>Recent breakthroughs in generative AI have amazed people with the unprecedented quality of generated images and videos, as exemplified by SORA, Midjourney, StableDiffusion, and many others. These advancements have been achieved using diffusion models, which have become the new standard technique for generative models. Diffusion models offer numerous advantages, including superior performance in the quality of generated outputs, as well as capabilities in conditional generation, personalization, zero-shot manipulation, and knowledge distillation.</p>
+<p>In this course, we will discuss the theoretical foundations and practical applications of diffusion models. While the goal is to cover both theory and practice, the focus will be on gaining hands-on experience by implementing diffusion model techniques in programming assignments and solving real-world problems in the course project. </p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Solid background in machine learning and deep learning</li>
+<li>Hands-on experience with neural network implementation</li>
+<li>Recommended prior courses:<ul>
+<li>MAS.20050 Probability and Statistics</li>
+<li>MAS.20001 Differential Equations and Applications</li>
+<li>CS.30701 Introduction to Deep Learning</li>
+</ul>
+</li>
+</ul>
+<h2 id="course-staff">Course Staff</h2>
+<p><strong>Instructor</strong>: <a href="https://mhsung.github.io/" target="_blank">Minhyuk Sung</a> (<a href="mailto:mhsung@kaist.ac.kr">mhsung@kaist.ac.kr</a>)</p>
+<p><strong>Course Assistants:</strong></p>
+<ul>
+<li>Juil Koo (<a href="mailto:63days@kaist.ac.kr">63days@kaist.ac.kr</a>)</li>
+<li>Seungwoo Yoo (<a href="mailto:dreamy1534@kaist.ac.kr">dreamy1534@kaist.ac.kr</a>)</li>
+<li>Yuseung Lee (<a href="mailto:phillip0701@kaist.ac.kr">phillip0701@kaist.ac.kr</a>)</li>
+<li>Yunhong Min (<a href="mailto:dbsghd363@kaist.ac.kr">dbsghd363@kaist.ac.kr</a>)</li>
+</ul>
+<h2 id="past-years">Past Years</h2>
+<ul>
+<li><a href="https://mhsung.github.io/kaist-cs492d-fall-2024/" target="_blank">CS492(D): Diffusion Models and Their Applications</a></li>
+</ul>
+<h2 id="grading">Grading</h2>
+<ul>
+<li>In-Class Participation: 10%</li>
+<li><a href="in-class-tests/" target="_blank">In-Class Tests</a>: 20%</li>
+<li><a href="programming-assignments/" target="_blank">Programming Assignments</a>: 20%</li>
+<li><a href="image-generation-challenge/" target="_blank">Image Generation Challenge</a>: 25%</li>
+<li><a href="visual-generation-contest/" target="_blank">Visual Generation Contest</a>: 25%</li>
+</ul>
+<!--
+## Paper List
+
+[Paper List](https://docs.google.com/spreadsheets/d/1j7amDru9bRQsQgp2pfm1a8GrZ6K0HWwCDORGq-sj7dQ/edit?usp=sharing){:target="_blank" .md-button}
+-->
+
+<h2 id="useful-resources">Useful Resources</h2>
+<ul>
+<li><a href="https://mhsung.github.io/kaist-cs492d-fall-2024/" target="_blank">Fall 2024 Course Webpage</a></li>
+<li><a href="https://geometry.cs.ucl.ac.uk/courses/diffusion_ImageVideo_sigg25/" target="_blank">SIGGRAPH 2025 Course: Diffusion Models for Image and Video Generation: From Foundations to Emerging Directions</a></li>
+<li><a href="https://geometry.cs.ucl.ac.uk/courses/diffusion4ContentCreation_sigg24/" target="_blank">SIGGRAPH 2024 Course: Diffusion Models for Visual Content Generation</a></li>
+<li><a href="https://cvpr2023-tutorial-diffusion-models.github.io/" target="_blank">CVPR 2023 Tutorial: Denoising Diffusion Models: A Generative Learning Big Bang</a></li>
+<li><a href="https://yang-song.net/blog/2021/score/" target="_blank">"Generative Modeling by Estimating Gradients of the Data Distribution", Yang Song.</a></li>
+<li><a href="https://lilianweng.github.io/posts/2021-07-11-diffusion-models/" target="_blank">"What are Diffusion Models?", Lilian Weng.</a></li>
+<li><a href="https://arxiv.org/abs/2208.11970" target="_blank">"Understanding Diffusion Models: A Unified Perspective". Calvin Luo.</a></li>
+<li><a href="https://arxiv.org/abs/2403.18103" target="_blank">"Tutorial on Diffusion Models for Imaging and Vision". Stanley H. Chan.</a></li>
+<li><a href="https://arxiv.org/abs/2406.08929" target="_blank">"Step-by-Step Diffusion: An Elementary Tutorial". Preetum Nakkiran, Arwen Bradley, Hattie Zhou, and Madhu Advani.</a></li>
+</ul>
+<h2 id="important-dates">Important Dates</h2>
+<p>ALL ASSIGNMENTS ARE DUE 23:59 KST.  </p>
+<p>(Subject to Change)  </p>
+<ul>
+<li>Project Team Sign-Up: <mark>Due Sep 30 (Tue)</mark>  </li>
+<li>1st Programming Assignment: <mark>Due Oct 2 (Thu)</mark>  </li>
+<li>2nd Programming Assignment: <mark>Due Nov 1 (Sat)</mark>  </li>
+<li>3rd Programming Assignment: <mark>Due Nov 22 (Sat)</mark>  </li>
+<li>Image Generation Challenge Submission: <mark>Due Nov 15 (Sat)</mark> </li>
+<li>Visual Generation Contest Submission: <mark>Due Dec 06 (Sat)</mark> </li>
+</ul>
+<h2 id="schedule">Schedule</h2>
+<p>(Subject to Change) </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Week</th>
+<th style="text-align: center;">Mon</th>
+<th style="text-align: center;">Topic</th>
+<th style="text-align: center;">Wed</th>
+<th style="text-align: center;">Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Sep 01</td>
+<td style="text-align: center;"><strong>Course Introduction</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VkOFQzMzF6allkUHZTTElRRnpqRkM4QlF3Y2FOZkM5MVBtNTRlcnZJUk1fbWc%5FZT1yc0tjTlQ&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s7ddf13df8d734f87bd22c8405ce3142f&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a></td>
+<td style="text-align: center;">Sep 03</td>
+<td style="text-align: center;"><strong>Introduction to Generative Models</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VURGlxMktycFhKT254S2VqU3BfRl80Qkw0UkVUWWd6Rm4tb2xvTjB5U2ctM0E%5FZT1ZT2JJWGI&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s62abe230a5ab4e729f129e8d2a7f17fe&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/96XoVM7PYtQ" target="_blank"><strong>Recording</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">Sep 08</td>
+<td style="text-align: center;"><strong>DDPM 1</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VVeUJaUnFfRTl4THI2YXcyQVhvb3NBQmVFMXgtenNwbW8ycUF5aXUzNkZETXc%5FZT1jZzZ0YWI&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s1a65814c13bf4bdcafa6b0d805e8a2c0&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/qiFZQvcqTOo" target="_blank"><strong>Recording</strong></a></td>
+<td style="text-align: center;">Sep 10</td>
+<td style="text-align: center;"><strong>DDPM 2</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VZSUZhelJLbXVKSWxLeUx6dDBCZWZzQk55MG1obHhxS0RwYUFUdkFyODF3UWc%5FZT1FMHRNU0E&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s346b05829a4a48e294ac8bcedd0179fb&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/5_t3uSvdrWg" target="_blank"><strong>Recording</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">Sep 15</td>
+<td style="text-align: center;"><strong>Score-Based Models</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VYRmI2eWVGdHBaSG9BR2N5NUZhbVI4QjZtbWJxbXdIbEt0M2t6dGdCaElaYnc%5FZT1Qc3FzNmE&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s27eb5b71b6854796a0019ccb915a991f&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/AG4qcza52yo" target="_blank"><strong>Recording</strong></a></td>
+<td style="text-align: center;">Sep 17</td>
+<td style="text-align: center;"><strong>DDIM</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VYd0RUWkhyeEdOTnJjYmYzSE02aGFJQnRIMXpjMEgwcDFpZ0lmXy1udUtfLWc%5FZT13MXhQbDc&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s914d037cc4eb4d63adc6dfdc733a85a2&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/vRvT1NOKsxw" target="_blank"><strong>Recording</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">Sep 22</td>
+<td style="text-align: center;"><strong>Conditional Generation /<br> Latent Diffusion</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VXMkR0enVCdXY5TWdNZWNVSkc2VUhFQjAzMHQyRDdINThTNDZYeDlaQW1zekE%5FZT1LZXNVRjc&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s3bb7836dba814cff80c79c5091ba5071&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/elW_X0ezM70" target="_blank"><strong>Recording</strong></a></td>
+<td style="text-align: center;">Sep 24</td>
+<td style="text-align: center;"><mark><a href="https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment1-DDPM-DDIM" target="_blank">Assignment 1 Session</a></mark><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VTNUZiN0RTWWlWRmt5WEdYQWVwZzJRQkRaSlNOb1drY3pDa1gza2NpTXdnRFE%5FZT1OUGRkRkE&amp;cid=60562023B6640282&amp;id=60562023B6640282%21sb06f452e62d245259325c65c07a98364&amp;parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&amp;o=OneUp" target="_blank"><strong>Slides</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Sep 29</td>
+<td style="text-align: center;"><strong>Diffusion Models in Continuous Time</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VRRzlCUU5XTE45T2d1YmdLVHROWTFZQlpVMkZ0NVM5MUduSDJQTUVQT3lpM3c%5FZT1iajRMUHE&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s0305bd012c564edf82e6e0293b4d6356&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/by_flhcQJj4" target="_blank"><strong>Recording</strong></a></td>
+<td style="text-align: center;">Oct 01</td>
+<td style="text-align: center;"><mark><a href="https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Demo" target="_blank">Demo Session</a></mark></td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">Oct 06</td>
+<td style="text-align: center;">No Class (Chuseok)</td>
+<td style="text-align: center;">Oct 08</td>
+<td style="text-align: center;">No Class (Chuseok)</td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">Oct 13</td>
+<td style="text-align: center;"><strong>ODE Solvers</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VUbXFIQ0dOcUNSTWdzZlk3RWpCMjRnQldBcHN4U2NaMlBPTkluOGV6QnUxRUE%5FZT1jRk5VYmU&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s211caa39a88d4c2482c7d8ec48c1db88&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/eKW5AAy5ae8" target="_blank"><strong>Recording</strong></a></td>
+<td style="text-align: center;">Oct 15</td>
+<td style="text-align: center;"><mark><a href="https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment2-DPMSolver" target="_blank">Assignment 2 Session</a></mark><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VTOEdaSjZSZHZ0RHJwNFJNVGIxZmo0QkZ6NVRGT196b2l0ejI2QXpfbjRhRFE%5FZT1iMkVKb3U&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s9e64062f769143fbae9e113136f57e3e&amp;parId=60562023B6640282%21s5f0abf9bf9a34d9d9e25be0a166b01d3&amp;o=OneUp" target="_blank"><strong>Slides</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">Oct 20</td>
+<td style="text-align: center;">No Class (Midterm Week)</td>
+<td style="text-align: center;">Oct 22</td>
+<td style="text-align: center;">No class (Midterm Week)</td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">Oct 27</td>
+<td style="text-align: center;"><mark><a href="in-class-tests/" target="_blank">In-Class Test 1</a></mark></td>
+<td style="text-align: center;">Oct 29</td>
+<td style="text-align: center;"><strong>Flow Matching 1</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0ViRFJ4b0ZDMWo1R2pzbkk5cy1EUko4Qk5uQzNWR1lDdmFVejdxcnJQS0U3bEE%5FZT1kbTdrcHQ&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s81c6d1b0d642463e8ec9c8f6cf83449f&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/-1hgQC58Nfc" target="_blank"><strong>Recording</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">Nov 03</td>
+<td style="text-align: center;"><strong>Flow Matching 2</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VXd3VBTzVodU1sSm80blAtYnF4RXNvQnJ4Y2tQaGNBVWxTOVlGay03RGlIaVE%5FZT1OTjZ5SVo&amp;cid=60562023B6640282&amp;id=60562023B6640282%21see002e6cb86149c9a389cff9bab112ca&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/o9tccBWdcQ4" target="_blank"><strong>Recording</strong></a></td>
+<td style="text-align: center;">Nov 05</td>
+<td style="text-align: center;"><mark><a href="https://github.com/KAIST-Visual-AI-Group/Diffusion-2025-Assignment3-Flow" target="_blank">Assignment 3 Session</a></mark></td>
+</tr>
+<tr>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">Nov 10</td>
+<td style="text-align: center;"><strong>Inference-Time Guidance 1</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0VVb0gxUlR1Sko5Q3RDZy1TVXo3VUhJQnJrMHZQd2hnZ1ZVNm02bkQ3NWtuNVE%5FZT1iM3FaQ0I&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s14d5074a24ee429fb4283e494cfb5072&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/AjrLJeWKf3M" target="_blank"><strong>Recording</strong></a></td>
+<td style="text-align: center;">Nov 12</td>
+<td style="text-align: center;">No Class (Break)</td>
+</tr>
+<tr>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">Nov 17</td>
+<td style="text-align: center;"><strong>Inference-Time Guidance 2</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0lRRGtVQXM5YllOZVRZR2Vpem0tRktzdkFiWmg2RDNUSWk0enoyejVfVTBmbDEwP2U9YkRFMUkw&amp;cid=60562023B6640282&amp;id=60562023B6640282%21s3d0b50e4836d4d5e819e8b39be14ab2f&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/5D95I30oedA" target="_blank"><strong>Recording</strong></a></td>
+<td style="text-align: center;">Nov 19</td>
+<td style="text-align: center;"><strong>Score Distillation<br>Coarse Wrap-Up</strong><br><a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2IvYy82MDU2MjAyM2I2NjQwMjgyL0lRQmdyamVsSEdTV1FxWDBqM09Mb3VXVkFiYnR6S1MxbE1sSkRRWmJFUXVpSGVBP2U9WXIxSVFm&amp;cid=60562023B6640282&amp;id=60562023B6640282%21sa537ae60641c4296a5f48f738ba2e595&amp;parId=60562023B6640282%21s1f04e32a613643ea8f3a45539dc2c1ff&amp;o=OneUp" target="_blank"><strong>Slides</strong></a><br><a href="https://youtu.be/xVcHTUYQms4" target="_blank"><strong>Recording</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">Nov 24</td>
+<td style="text-align: center;"><strong>Guest Lecture 1</strong><br><a href="guest-lecture-subham-sahoo/"><strong>Subham Sahoo</strong></a><br><a href="https://youtu.be/eA1EnwoMxf0" target="_blank"><strong>Recording</strong></a></td>
+<td style="text-align: center;">Nov 26</td>
+<td style="text-align: center;"><strong>Guest Lecture 2</strong><br><a href="guest-lecture-philipp-henzler/"><strong>Philipp Henzler</strong></a><br><a href="https://youtu.be/4fD2yLXo97U" target="_blank"><strong>Recording</strong></a></td>
+</tr>
+<tr>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">Dec 01</td>
+<td style="text-align: center;"><mark><a href="in-class-tests/" target="_blank">In-Class Test 2</a></mark></td>
+<td style="text-align: center;">Dec 03</td>
+<td style="text-align: center;">No Class (Break)</td>
+</tr>
+<tr>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">Dec 08</td>
+<td style="text-align: center;">Project Presentations 1</td>
+<td style="text-align: center;">Dec 10</td>
+<td style="text-align: center;">Project Presentations 2</td>
+</tr>
+<tr>
+<td style="text-align: center;">16</td>
+<td style="text-align: center;">Dec 15</td>
+<td style="text-align: center;">No Class (Final Week)</td>
+<td style="text-align: center;">Dec 17</td>
+<td style="text-align: center;">No Class (Final Week)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ai-coding-assistant-tool-policy">AI Coding Assistant Tool Policy</h2>
+<p><strong>You are allowed (and even encouraged) to utilize AI coding assistant tools</strong>, such as ChatGPT, Copilot, Codex, and Code Intelligence, for your programming assignments and projects. Utilizing AI coding assistant tools will not be deemed as plagiarism. However, it is still <strong>strictly prohibited to directly copy code from the Internet or from someone else</strong>. Doing so will lead to a score of zero and a report to the university.</p>
+<p><br /></p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Teaser image credits: Song et al., Score-Based Generative Modeling through Stochastic Differential Equations, ICLR 2021.<br>&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Minhyuk Sung
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
