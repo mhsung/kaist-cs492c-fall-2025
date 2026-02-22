@@ -17,7 +17,7 @@ hide:
 
 ## Time & Location
 **Time**: Mon/Wed 10:30 a.m. - 11:45 a.m. (KST)   
-**Location**: E3-5 Room 210.
+**Location**: E3-5 Room 210
 
 <!-- [Zoom Link](https://kaist.zoom.us/j/83695846631){:target="_blank" .md-button} -->
 
