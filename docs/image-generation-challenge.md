@@ -65,7 +65,7 @@ You are required to use the [Simpsons Face](https://www.kaggle.com/datasets/kost
 
 - **Final grading will be determined relative to the best FID score achieved for each NFE.** Specifically, the score for each NFE is calculated as follows:
     $$
-    \text{Score} = \max\!\left(
+    \text{Score} = \max\left(
     \frac{\text{TA's FID} - \text{Your FID}}
     {\text{TA's FID} - \text{Lowest FID}} \times 4 + 5,\; 0
     \right)
