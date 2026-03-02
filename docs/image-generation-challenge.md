@@ -17,9 +17,6 @@ hide:
 ^^**Where to submit**^^: ==KLMS==  
 
 
-[Introduction Slides]({{links.image_gen_slides}}){:target="_blank" .md-button}
-
-
 ### What to Do
 In this challenge, your task is to train an **image diffusion/flow model** beyond the previous 2D toy experiment setups from the assignments. After training, you are encouraged to explore and apply any techniques you find effective for achieving **high-quality generation** with only **a few sampling steps**.
 
